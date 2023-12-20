@@ -90,7 +90,7 @@ The point labels may be
 ## Performance
 The inference time includes the pre-preprocessing time and the post-processing time:
 | Device          | Image Shape(WxH)	 | Model Shape(WxH)	 | Inference Time(ms) |
-|----------------|------------|------------|------------|
+|:---------------:|:------------:|:------------:|:------------:|
 | RTX4090        |2048x1365  |1024x1024       |14       |
 
 ## 🛠️ Installation
