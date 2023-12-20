@@ -110,7 +110,7 @@ The inference time includes the pre-preprocessing time and the post-processing t
 8. Download and install any recent [OpenCV](https://opencv.org/releases/) for Windows.
   
 ## Acknowledgement
-Some of functions were borrowed from the following projects.
+This project is based on the following projects:
 - [NanoSAM](https://github.com/NVIDIA-AI-IOT/nanosam) - The distilled Segment Anything (SAM).
 - [TensorRTx](https://github.com/wang-xinyu/tensorrtx) - Implementation of popular deep learning networks with TensorRT network definition API.
-- [TensorRT](https://github.com/NVIDIA/TensorRT/tree/release/8.6/samples) - TensorRT samples.
+- [TensorRT](https://github.com/NVIDIA/TensorRT/tree/release/8.6/samples) - TensorRT samples and api documentation.
