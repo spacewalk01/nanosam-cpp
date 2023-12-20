@@ -20,7 +20,7 @@ This repo provides a C++ implementation of Nvidia's [NanoSAM](https://github.com
             "resnet18_image_encoder.engine",
             "mobile_sam_mask_decoder.engine"
         );
-        ``
+        ```
      2. Build engines directly from onnx files:
       
         ```cpp
@@ -41,16 +41,16 @@ This repo provides a C++ implementation of Nvidia's [NanoSAM](https://github.com
    Mat mask = nanosam.predict(image, points, labels);
    ```
 
-<table style="margin-right:auto; text-align:center;">
-  <tr>
-    <td style="text-align: center;">Input</td>
-    <td style="text-align: center;">Output</td>
-  </tr>
-  <tr>
-    <td><img src="assets/dog.jpg" width=480px></td>
-    <td><img src="assets/dog_mask.jpg" width=480px></td>
-  </tr>
-</table>
+   <table style="margin-right:auto; text-align:center;">
+      <tr>
+        <td style="text-align: center;">Input</td>
+        <td style="text-align: center;">Output</td>
+      </tr>
+      <tr>
+        <td><img src="assets/dog.jpg" width=480px></td>
+        <td><img src="assets/dog_mask.jpg" width=480px></td>
+      </tr>
+    </table>
 
 3. Create masks from bounding boxes:
 
@@ -63,16 +63,16 @@ This repo provides a C++ implementation of Nvidia's [NanoSAM](https://github.com
    Mat mask = nanosam.predict(image, points, labels);
    ```
 
-<table style="margin-right:auto; text-align:center;">
-  <tr>
-    <td style="text-align: center;">Input</td>
-    <td style="text-align: center;">Output</td>
-  </tr>
-  <tr>
-    <td><img src="assets/dogs.jpg" width=480px></td>
-    <td><img src="assets/dogs_mask.jpg" width=480px></td>
-  </tr>
-</table>
+   <table style="margin-right:auto; text-align:center;">
+     <tr>
+       <td style="text-align: center;">Input</td>
+       <td style="text-align: center;">Output</td>
+     </tr>
+     <tr>
+       <td><img src="assets/dogs.jpg" width=480px></td>
+       <td><img src="assets/dogs_mask.jpg" width=480px></td>
+     </tr>
+  </table>
 
 <details>
 <summary>Notes</summary>
