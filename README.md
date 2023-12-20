@@ -14,13 +14,13 @@ This repo provides a C++ implementation of Nvidia's [NanoSAM](https://github.com
      - Option 1: Load engines built by trtexec:
 
      ```cpp
-#include "nanosam/nanosam.h"
+     #include "nanosam/nanosam.h"
 
-NanoSam nanosam(
-   "resnet18_image_encoder.engine",
-   "mobile_sam_mask_decoder.engine"
-);
-    ```
+     NanoSam nanosam(
+         "resnet18_image_encoder.engine",
+         "mobile_sam_mask_decoder.engine"
+     );
+     ```
 
     - Option 2: Build engines directly from onnx files:
     ```cpp
