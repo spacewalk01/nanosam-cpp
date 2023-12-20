@@ -8,7 +8,7 @@ This repo provides a TensorRT C++ implementation of Nvidia's [NanoSAM](https://g
   <img src="assets/video.gif" height="250px" width="360px" /> 
 </p>
 
-## ⚙️ Usage
+## ⚙️ Getting Started
 1. There are two ways to load engines:
 
      1. Load engines built by trtexec:
