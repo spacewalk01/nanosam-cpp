@@ -11,7 +11,7 @@ This repo provides a C++ implementation of Nvidia's [NanoSAM](https://github.com
 ## ⚙️ Usage
 1. There are two ways to load engines:
 
-- Option 1: Load engines built by trtexec for inference:
+- Option 1: Load engines built by trtexec:
 
 ```cpp
 #include "nanosam/nanosam.h"
