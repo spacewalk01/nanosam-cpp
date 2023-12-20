@@ -11,24 +11,24 @@ This repo provides a C++ implementation of Nvidia's [NanoSAM](https://github.com
 ## ⚙️ Usage
 1. There are two ways to load engines:
 
-- Option 1: Load engines built by trtexec:
+     - Option 1: Load engines built by trtexec:
 
-```cpp
+     ```cpp
 #include "nanosam/nanosam.h"
 
 NanoSam nanosam(
    "resnet18_image_encoder.engine",
    "mobile_sam_mask_decoder.engine"
 );
-```
+    ```
 
-- Option 2: Build engines directly from onnx files:
-```cpp
+    - Option 2: Build engines directly from onnx files:
+    ```cpp
 NanoSam nanosam(
    "resnet18_image_encoder.onnx",
    "mobile_sam_mask_decoder.onnx"
 );
-```
+    ```
 
 2. Segment an object using a prompt point:
 
