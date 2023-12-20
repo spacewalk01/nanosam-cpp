@@ -13,34 +13,33 @@ This repo provides a C++ implementation of Nvidia's [NanoSAM](https://github.com
 
      1. Load engines built by trtexec:
 
-     ```cpp
-     #include "nanosam/nanosam.h"
+        ```cpp
+        #include "nanosam/nanosam.h"
 
-     NanoSam nanosam(
-         "resnet18_image_encoder.engine",
-         "mobile_sam_mask_decoder.engine"
-     );
-     ```
-
-    2. Build engines directly from onnx files:
+        NanoSam nanosam(
+            "resnet18_image_encoder.engine",
+            "mobile_sam_mask_decoder.engine"
+        );
+        ``
+     2. Build engines directly from onnx files:
       
-    ```cpp
-    NanoSam nanosam(
-        "resnet18_image_encoder.onnx",
-        "mobile_sam_mask_decoder.onnx"
-    );
-    ```
+        ```cpp
+        NanoSam nanosam(
+            "resnet18_image_encoder.onnx",
+            "mobile_sam_mask_decoder.onnx"
+        );
+        ```
 
 2. Segment an object using a prompt point:
 
-```cpp
-Mat image = imread("assets/dog.jpg");
-// Foreground point
-vector<Point> points = { Point(1300, 900) };
-vector<float> labels = { 1 }; 
+   ```cpp
+   Mat image = imread("assets/dog.jpg");
+   // Foreground point
+   vector<Point> points = { Point(1300, 900) };
+   vector<float> labels = { 1 }; 
 
-Mat mask = nanosam.predict(image, points, labels);
-```
+   Mat mask = nanosam.predict(image, points, labels);
+   ```
 
 <table style="margin-right:auto; text-align:center;">
   <tr>
@@ -53,16 +52,16 @@ Mat mask = nanosam.predict(image, points, labels);
   </tr>
 </table>
 
-3. We can also create masks from bounding boxes:
+3. Create masks from bounding boxes:
 
-```cpp
-Mat image = imread("assets/dogs.jpg");
-// Bounding box top-left and bottom-right points
-vector<Point> points = { Point(100, 100), Point(750, 759) };
-vector<float> labels = { 2, 3 }; 
+   ```cpp
+   Mat image = imread("assets/dogs.jpg");
+   // Bounding box top-left and bottom-right points
+   vector<Point> points = { Point(100, 100), Point(750, 759) };
+   vector<float> labels = { 2, 3 }; 
 
-Mat mask = nanosam.predict(image, points, labels);
-```
+   Mat mask = nanosam.predict(image, points, labels);
+   ```
 
 <table style="margin-right:auto; text-align:center;">
   <tr>
