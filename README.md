@@ -30,7 +30,7 @@ NanoSam nanosam(
 );
 ```
 
-2. Using a prompt point, segment an object:
+2. Segment an object using a prompt point:
 
 ```cpp
 Mat image = imread("assets/dog.jpg");
