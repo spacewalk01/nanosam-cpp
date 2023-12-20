@@ -8,7 +8,7 @@ This repo provides a TensorRT C++ implementation of Nvidia's [NanoSAM](https://g
   <img src="assets/video.gif" height="250px" width="360px" /> 
 </p>
 
-## ⚙️ Getting Started
+## Getting Started
 1. There are two ways to load engines:
 
      1. Load engines built by trtexec:
@@ -93,7 +93,7 @@ The inference time includes the pre-preprocessing time and the post-processing t
 |:---------------:|:------------:|:------------:|:------------:|
 | RTX4090        |2048x1365  |1024x1024       |14       |
 
-## 🛠️ Installation
+## Installation
 
 1. Download the image encoder: [resnet18_image_encoder.onnx](https://drive.google.com/file/d/14-SsvoaTl-esC3JOzomHDnI9OGgdO2OR/view?usp=drive_link)
 2. Download the mask decoder: [mobile_sam_mask_decoder.onnx](https://drive.google.com/file/d/1jYNvnseTL49SNRx9PDcbkZ9DwsY8up7n/view?usp=drive_link)    
