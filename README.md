@@ -50,7 +50,7 @@ This repo provides a C++ implementation of Nvidia's [NanoSAM](https://github.com
         <td><img src="assets/dog.jpg" width=480px></td>
         <td><img src="assets/dog_mask.jpg" width=480px></td>
       </tr>
-    </table>
+   </table>
 
 3. Create masks from bounding boxes:
 
