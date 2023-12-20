@@ -1,7 +1,7 @@
 
 <h1 align="center"><span>NanoSAM C++</span></h1>
 
-This repo provides a C++ implementation of Nvidia's [NanoSAM](https://github.com/NVIDIA-AI-IOT/nanosam), a distilled segment-anything model, for real-time inference on GPU.
+This repo provides a TensorRT C++ implementation of Nvidia's [NanoSAM](https://github.com/NVIDIA-AI-IOT/nanosam), a distilled segment-anything model, for real-time inference on GPU.
 
 <p align="center" margin: 0 auto;>
   <img src="assets/segment_with_single_click.gif" height="250px" width="360px" />
