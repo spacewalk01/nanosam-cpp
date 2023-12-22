@@ -78,15 +78,24 @@ void segmentWithPoint(NanoSam& nanosam, string imagePath, string outputPath, Poi
 
 int main()
 {
-    // Load the engines
-    //NanoSam nanosam( "data/resnet18_image_encoder.engine",  "data/mobile_sam_mask_decoder.engine");
+    /* 1. Load engine examples */
 
-    // Build the engines from onnx files
+    // Option 1: Load the engines
+    //NanoSam nanosam("data/resnet18_image_encoder.engine",  "data/mobile_sam_mask_decoder.engine");
+
+    // Option 2: Build the engines from onnx files
     NanoSam nanosam("data/resnet18_image_encoder.onnx", "data/mobile_sam_mask_decoder.onnx");
 
+    /* 2. Segmentation examples */
+    
+    // Demo 1: Segment using a point
     segmentWithPoint(nanosam, "assets/dog.jpg", "assets/dog_mask.jpg", Point(1300, 900));
-    //segmentBbox(nanosam, "assets/dogs.jpg", "assets/dogs_mask.jpg", { Point(100, 100), Point(750, 759) });
-    //segmentClickedPoint(nanosam, "assets/dogs.jpg");
+    
+    // Demo 2: Segment using a bounding box
+    segmentBbox(nanosam, "assets/dogs.jpg", "assets/dogs_mask.jpg", { Point(100, 100), Point(750, 759) });
+
+    // Demo 3: Segment the clicked object
+    segmentClickedPoint(nanosam, "assets/dogs.jpg");
 
     return 0;
 }
